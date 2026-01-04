@@ -1,4 +1,25 @@
-Bun + PostgreSQL（Docker）
+- Bun + PostgreSQL（Docker）
+- Prisma + PostgreSQL（Docker）
+
+## 初期設定
+
+```
+bun install
+docker compose up -d   # DBコンテナ起動
+bun prisma migrate dev # Prismaクライアントコード生成 + マイグレーション実行
+```
+
+## Bunから直接DBアクセス
+
+```
+bun src/bunclient.ts
+```
+
+## Prisma ClientからDBアクセス
+
+```
+bun src/prismaclient.ts
+```
 
 ## データベース
 
