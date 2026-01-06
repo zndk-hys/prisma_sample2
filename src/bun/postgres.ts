@@ -1,5 +1,7 @@
 // Bunの組み込みPostgreSQLクライアントを使用
-const sql = new Bun.SQL({
+import { SQL } from 'bun';
+
+const sql = new SQL({
   hostname: 'localhost',
   port: 5432,
   database: 'mydb',
