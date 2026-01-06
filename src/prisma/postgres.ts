@@ -1,4 +1,4 @@
-import { PrismaClient } from './generated/prisma/postgres/client';
+import { PrismaClient } from '../generated/prisma/postgres/client';
 import { PrismaPg } from '@prisma/adapter-pg';
 import pg from 'pg';
 
