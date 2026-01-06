@@ -5,8 +5,8 @@
 
 ```
 bun install
-docker compose up -d   # DBコンテナ起動
-bun prisma migrate dev # Prismaクライアントコード生成 + マイグレーション実行
+docker compose up -d # DBコンテナ起動
+bun prisma migrate dev --config ./prisma/postgres/prisma.config.ts # Prismaクライアントコード生成 + マイグレーション実行
 ```
 
 ## Bunから直接DBアクセス
