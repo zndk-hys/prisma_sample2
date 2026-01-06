@@ -26,19 +26,19 @@ bun src/prismaclient.ts
 ### コンテナの起動
 
 ```
-docker compose up -d
+docker compose -f docker/compose.postgres.yml up -d
 ```
 
 ### コンテナの終了
 
 ```
-docker compose down
+docker compose -f docker/compose.postgres.yml down
 ```
 
 ### コンテナの終了 + データベース削除
 
 ```
-docker compose down -v
+docker compose -f docker/compose.postgres.yml down -v
 ```
 
 ### ログを見る
